@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem auto;
+  background-color: #1b1938;
+  width: 75%;
+  height: 44.6rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+main .container-left {
+  position: relative;
+  width: 50%;
+  margin: 8rem;
+}
+main .container-left h1 {
+  font-size: 4.3rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: white;
+  min-width: 50rem;
+}
+main .container-left h1 span {
+  color: #aa5cdb;
+}
+main .container-left p {
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
+  width: 90%;
+  min-width: 50rem;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+main .container-left .container-stats {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  bottom: 0;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+main .container-left .container-stats h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+main .container-left .container-stats .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 4rem;
+}
+main .container-right {
+  width: 54rem;
+  background-image: url(images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+}
+main .container-right .image-color {
+  background-color: rgba(157, 0, 255, 0.301);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 986px) {
+  main {
+    flex-direction: column-reverse;
+    margin: 5rem auto;
+    width: 75%;
+    height: auto;
+    min-width: 30rem;
+  }
+  main .container-left {
+    width: auto;
+    margin: 3rem;
+  }
+  main .container-left h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    min-width: 10rem;
+    margin-top: 2rem;
+  }
+  main .container-left p {
+    text-align: center;
+    width: 100%;
+    min-width: 10rem;
+  }
+  main .container-left .container-stats {
+    margin-top: 5rem;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+  }
+  main .container-right {
+    height: 20rem;
+    width: 100%;
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: 100%;
+    min-width: 30rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
